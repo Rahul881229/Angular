@@ -1,0 +1,16 @@
+<p>forloop works!</p>
+<h1>{{users[0]}}</h1>
+<h2>{{users[1]}}</h2>
+<!-- //  for loop iterating -->
+@for (user of users; track user){ 
+     <h2>{{user}}</h2>
+}
+<hr>
+@for (stud of students; track stud; let id=$index) {
+     
+    <h3>{{id+1}}</h3>
+    <h3>{{stud.name}}</h3>
+    <h3>{{stud.age}}</h3>
+    <h3>{{stud.email}}</h3>
+    <button (click)="getNAme(stud.name)">get name</button>
+}

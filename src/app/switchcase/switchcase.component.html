@@ -1,0 +1,29 @@
+<p>switchcase works!</p>
+<h1> swicth case </h1>
+<button (click)="handlecolro('red')">red</button>
+<button (click)="handlecolro('blue')">blue</button>
+<button (click)="handlecolro('yellow')">yellow</button>
+<button (click)="handlecolro('green')">green</button>
+<button (click)="handlecolro('white')">white</button>
+<input placeholder="enter the color " type="text" (input)="changecolro($event)">
+ @switch (color) {
+    @case ("red") {
+        <div style="width: 200px; height: 200px; background-color: red;"></div>
+    }
+     @case ("green") {
+        <div style="width: 200px; height: 200px; background-color: rgb(33, 224, 8);"></div>
+
+     }
+     @case ("yellow") {
+        <div style="width: 200px; height: 200px; background-color: rgb(194, 238, 72);"></div>
+
+     }
+     @case ("blue") {
+        <div style="width: 200px; height: 200px; background-color: rgb(43, 33, 180);"></div>
+
+     }
+     @default {
+        <div style="width: 200px; height: 200px; background-color: rgb(4, 2, 14); color: white;"> no color match</div>
+
+     }
+ }

@@ -27,9 +27,11 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css","src/theme.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/tide/tide.min.js"
+            ]
           },
           "configurations": {
             "production": {
