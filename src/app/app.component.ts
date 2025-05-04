@@ -18,10 +18,11 @@ import {  MultiselectOverviewExample } from './t-button/button.component';
 import { dropdown } from './t-dropdown/t-dropdown.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { DynamicstyleComponent } from './dynamicstyle/dynamicstyle.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @Component({
   selector: 'app-root',
-  imports: [MultiselectOverviewExample,SignalsComponent,dropdown,TodolistComponent,DynamicstyleComponent],//IMPORTING THE NEW COMPONENETS WE  CREATED 
+  imports: [MultiselectOverviewExample,SignalsComponent,dropdown,TodolistComponent,DynamicstyleComponent,DirectivesComponent],//IMPORTING THE NEW COMPONENETS WE  CREATED 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

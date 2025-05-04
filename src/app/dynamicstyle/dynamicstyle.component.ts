@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 export class DynamicstyleComponent {
 bgcolor="red"
  fontSize="40px"
+ headingBig="50px"
+ headingSmall="20px"
+ Zoom=true
+  udatesize(){
+    this.Zoom=! this.Zoom
+  }
 }
