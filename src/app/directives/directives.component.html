@@ -17,6 +17,50 @@ types of directives
 <h3>Attrbute Directive</h3>
 <p>modify the Apperance or behaviour of an exisiting element</p>
 <h2 *ngIf="show">hii i am new here from ngif</h2>
+<div *ngIf="login ;else elseBlock">
+    <a href=""><h2>logout {{login}}</h2></a><br>
+</div>
+<ng-template #elseBlock>
+    <a href=""><h2>login</h2></a>
+</ng-template>
+
+
+<h2 style="color: red;">ngfor</h2>
 <ul>
     <li *ngFor="let x of Students">{{x}}</li>
 </ul>
+<ul>
+    <li *ngFor="let s of StudentsData">{{s.name}}, {{s.age}},{{s.job}}</li>
+</ul>
+<h2> nested ngfor </h2>
+<ul>
+    <li *ngFor="let s of StudentsDatas">
+      {{ s.name }}, {{ s.age }}, {{ s.job }}
+      <ul>
+        <li *ngFor="let skill of s.skills">
+          - {{ skill }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+
+
+  <div *ngIf="Block==0">
+    <h2>heading 0</h2>
+  </div>
+  <div *ngIf="Block==1">
+    <h2>Heading 1</h2>
+  </div>
+  
+  <div *ngIf="Block==2">
+    <h2>Heading 2</h2>
+  </div>
+  
+  <div *ngIf="Block==3">
+    <h2>Heading 3</h2>
+  </div>
+  
+  <button (click)="updateBlock()">click</button>
+  
+  
