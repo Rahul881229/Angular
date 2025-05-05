@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from "./signup/signup.component";
 import { ProfileComponent } from "./profile/profile.component";
@@ -19,10 +19,15 @@ import { dropdown } from './t-dropdown/t-dropdown.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { DynamicstyleComponent } from './dynamicstyle/dynamicstyle.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { HeaderComponent } from "./header/header.component";
+import { DropdwonComponent } from './dropdwon/dropdwon.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
-  imports: [MultiselectOverviewExample,SignalsComponent,dropdown,TodolistComponent,DynamicstyleComponent,DirectivesComponent],//IMPORTING THE NEW COMPONENETS WE  CREATED 
+  imports: [MultiselectOverviewExample, SignalsComponent, dropdown, TodolistComponent, DynamicstyleComponent, DirectivesComponent, NgswitchComponent, RouterOutlet, HeaderComponent, HeaderComponent, DropdwonComponent, PageNotFoundComponent,HomeComponent],//IMPORTING THE NEW COMPONENETS WE  CREATED 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

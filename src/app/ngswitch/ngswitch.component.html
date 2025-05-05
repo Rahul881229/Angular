@@ -1,1 +1,16 @@
 <p>ngswitch works!</p>
+<div [ngSwitch]="color">
+    <button (click)="onclickchenge('red')">red</button>
+    <button (click)="onclickchenge('green')">green</button>
+    <button (click)="onclickchenge('brwon')">brown</button>
+    <button (click)="onclickchenge('yellow')">yellow</button>
+    <button (click)="onclickchenge('black')">black</button>
+    <button (click)="onclickchenge('')">click</button>
+
+    <h1  *ngSwitchCase=" 'red' "  style="background-color: red;">red color</h1>
+    <h1 *ngSwitchCase=" 'green' "  style="background-color: green;">green color</h1>
+    <h1 *ngSwitchCase=" 'yellow' "  style="background-color: yellow;">yellow color</h1>
+    <h1  *ngSwitchCase=" 'brwon' "  style="background-color: brown;">brown color</h1>
+    <h1  *ngSwitchCase=" 'black' " style="background-color: black; color: whitesmoke;">black color</h1>
+    <h2 *ngSwitchDefault>not a color</h2>
+</div>
